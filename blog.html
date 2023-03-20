@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Blog Page</title>
     <script src="https://cdn.tailwindcss.com"></script>
 
 </head>
 <body>
 
 
-    <section class="p-20">
+    <section class="lg:p-20 px-5 py-20">
         <div class="bg-blue-100 p-5 grid grid-cols-2 items-center">
             <div class="col-span-1">
                 <h1 class="font-bold text-3xl ">Interactive</h1>
@@ -23,25 +23,33 @@
         </div>
 
 
-        <div class="grid  gap-5 py-10 ">
+        <div class="grid  lg:gap-5 gap-3 lg:py-10 py-5">
             <div class="col-span-auto ">
-                <div class="rounded-lg border border-solid border-gray-200 py-10 px-16  mt-10">
+                <div class="rounded-lg border border-solid border-gray-200 lg:py-10 py-5 lg:px-16 px-5  lg:mt-10 mt-5">
                     <h2 class="font-medium text-2xl capitalize mb-3">What is DOM ? What is purpose of DOM?</h2>
                     <p> <b>Meaning of <mark>DOM</mark> is Document Object Model. </b> To view our element in browser which can be create change and remove. For the Intaractive web pages we use this programming interface.  </p>
                 </div>
-                <div class="rounded-lg border border-solid border-gray-200 py-10 px-16  mt-10">
+                <div class="rounded-lg border border-solid border-gray-200 lg:py-10 py-5 lg:px-16 px-5  lg:mt-10 mt-5">
                     <h2 class="font-medium text-2xl capitalize mb-3">How to select Element from DOM.</h2>
-                    <p>To select element in DOM the main structure is <b><code><em>document.methodsname(selector name)</em></code></b>
+                    <p>To select element in DOM the main structure is <b><code><em>document.methodsname(selector_name)</em></code></b><br>
+                        There are a few methods we can select elements in a DOM__
+                        <ol>
+                            <li>document.getElementById(<mark>'Id Name'</mark>)</li>
+                            <li>document.getElementsByClassName(<mark>'Class Name'</mark>)</li>
+                            <li>document.querySelectorAll(<mark>'Id/class/tag Name'</mark>)</li>
+                            <li>document.querySelector(<mark>'Id/class/tag Name'</mark>)</li>
+                            <li>document.getElementsByTagName(<mark>'Tag Name'</mark>)</li> 
+                        </ol> 
                     
                     </p>
                 </div>
-                <div class="rounded-lg border border-solid border-gray-200 py-10 px-16  mt-10">
+                <div class="rounded-lg border border-solid border-gray-200 lg:py-10 py-5 lg:px-16 px-5  lg:mt-10 mt-5">
                     <h2 class="font-medium text-2xl capitalize mb-3">What is Event Bubble</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex eum nisi placeat suscipit, asperiores excepturi sint tempore ad doloremque quaerat sit quidem ducimus consectetur nesciunt numquam adipisci. Id, ex inventore.</p>
+                    <p>It's called <b> Event Bubbling</b>. When there are  group of element which are nested and by calling the element any of them and effect all the root element</p>
                 </div>
-                <div class="rounded-lg border border-solid border-gray-200 py-10 px-16  mt-10">
+                <div class="rounded-lg border border-solid border-gray-200 lg:py-10 py-5 lg:px-16 px-5  lg:mt-10 mt-5">
                     <h2 class="font-medium text-2xl capitalize mb-3">Tell me about Call back function</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex eum nisi placeat suscipit, asperiores excepturi sint tempore ad doloremque quaerat sit quidem ducimus consectetur nesciunt numquam adipisci. Id, ex inventore.</p>
+                    <p>Call a function into a function is cxalled call back function</p>
                 </div>
             </div>
         </div>
